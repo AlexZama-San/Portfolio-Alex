@@ -1,7 +1,7 @@
-# OV Template - Personal Blog & Portfolio
-Introducing a versatile and free template designed for use with the latest Astro version. This template boasts frequent updates, 
-a user-friendly interface, and compatibility with various purposes. Ideal for showcasing your portfolio, crafting blog articles,
-and sharing your personal narrative. Unlock the potential to express yourself effortlessly with this template.
+# Personal Blog & Portfolio
+this is a personal portfolio website built with Astro and Tailwind CSS. using a template maked by vratskyi 
+
+his github: https://github.com/vratskyi
 ------------------------------------------------------------------------------
 ![ov-template](https://i.ibb.co/1GXGRL6/ov-main.png)
 ![blog page](https://i.ibb.co/THK3vg9/ov-template-1.png)
