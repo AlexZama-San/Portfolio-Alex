@@ -3,9 +3,10 @@ import Layout from '@/layouts/Layout.astro';
 import Head from '@/components/Head.astro';
 import Title from '@/components/Title.astro';
 import { Image } from 'astro:assets';
-import water from '/src/assets/img/water-website.png';
-import byshikat from '/src/assets/img/online-store-byshikat.png';
-import lmd from '/src/assets/img/online-store-lmd.png';
+import tienda from '/src/assets/img/TIENDA NEXT.png';
+import pizza from '/src/assets/img/LEÑA MIA.png';
+import gas from '/src/assets/img/DISGAS.png';
+import Button from '@/components/Button.astro';
 import blur from '/src/assets/img/bg.svg';
 import PortfolioCard from '@/components/PortfolioCard.astro';
 
@@ -29,76 +30,79 @@ let title = Astro.props;
 		<div class='grid grid-rows-auto content-center gap-5 pb-10 mt-[11.1111%]'>
 
 			<PortfolioCard
-				img={water}
+				img={tienda}
 				alt={title}
-				site="https://h2ovoda.com.ua/"
-				title='Water delivery website'
+				site="https://github.com/AlexZama-San/tienda-NextJS"
+				title='TIENDA NEXT'
 				badgeProps={[
 					{ text: "JavaScript" },
 					{ text: "HTML/CSS" }
 			]}
 				badgeLinkProps={[ 
-					{text: "Astro", alt: "Astro logo", href: "https://astro.build/"},
+					{text: "NextJS", alt: "Astro logo", href: "https://nextjs.org"},
+					{text: "DOCKER", alt: "Astro logo", href: "https://www.docker.com"},
+					{text: "Mongo", alt: "Astro logo", href: "https://www.mongodb.com/es/cloud/atlas/lp/try4?utm_source=bing&utm_campaign=search_bs_pl_evergreen_atlas_core_prosp-brand_gic-null_amers-mx_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=415204517&adgroup=1221557888421229&msclkid=c45be1e56c5f167354628423d4526611"},
 					{text: "TailwindCSS", alt: "TailwindCSS logo", href: "https://tailwindcss.com/"}
 
 			 ]}
 				description={`
-				The website I developed offers water delivery in Belogorodka and
-				surrounding areas. It has an attractive design, intuitive layout
-				and integration with analytical tools to attract more customers.
-				Visitors can easily leave a request for water delivery through the
-				order form and get access to bottled drinking water.
+				this is a project that i made by myself, i used nextjs, tailwindcss, docker and mongoDB, the project is a online store, the main goal was to make a fast and secure site, and i did it, the site is very fast and secure,
+				the site use a docker container to run the mongoDB, and the site is hosted in vercel
 				`}
 			>
 	</PortfolioCard>
 
 		<PortfolioCard
-		img={byshikat}
+		img={pizza}
 		alt={title}
-		site="https://byshikat.com/"
-		title='Byshikat online shoes store'
+		site="https://github.com/AlexZama-San/Pagina-Le-a-Mia"
+		title='Leña Mia pizza'
 		badgeProps={[
-			{ text: "PHP" },
-			{ text: "ACF" },
 			{ text: "JavaScript" },
 			{ text: "HTML/CSS" }
 		]}
 			badgeLinkProps={[ 
-				{text: "WordPress", alt: "WordPress logo", href: "https://wordpress.com/"},
+				{text: "Bootstrap", alt: "bootstrap", href: "https://getbootstrap.com/"},
 		]}
 			description={`
-			Analyzed the target audience, I realized that it is necessary to
-			make something similar to the model of behavior in Instagram, as
-			well as similar at least remotely similar design, thanks to a set
-			of solutions sales from their instagram store went to online store
-			and increased by 1000%
+			Leña Mia is a pizza restaurant, I made the site using Bootstrap components and JavaScript, the site is very fast and secure, the site is hosted in github pages
+			and have a form to make orders.
 			`}
 		>
 		</PortfolioCard>
 
 		<PortfolioCard
-		img={lmd}
+		img={gas}
 		alt={title}
-		site="https://lmd.lviv.ua/"
-		title='Paper gift bags service'
+		site="https://github.com/AlexZama-San/Paginas/tree/master/DISGas"
+		title='DisGas'
 		badgeProps={[
-			{ text: "PHP" },
-			{ text: "ACF" },
 			{ text: "JavaScript" },
 			{ text: "HTML/CSS" }
 		]}
 			badgeLinkProps={[ 
-				{text: "WordPress", alt: "WordPress logo", href: "https://wordpress.com/"},
+				{text: "Bootstrap", alt: "bootstrap", href: "https://getbootstrap.com/"},
 		]}
 			description={`
-			This online store is based on WordPress CMS and WooCommerce, I
-			redesigned the old site to a modern design and optimized the
-			loading time, thanks to a comprehensive approach, the number of
-			visitors and sales increased. Now the site is at the top of google
-			in Ukraine.
+			using the same template of Leña Mia, i made a site for a gas company, the site is very fast and secure, the site is hosted in github pages
+			and using bootstrap components and JavaScript, this site haves information about the company and their services.
 			`}
 		>
 		</PortfolioCard>
+
+		<div
+					class='self-start blur-bg rounded-xl p-4 lg:p-10 w-full max-w-[400px]'>
+					<p class='text-xl font-light tracking-wide mt-5'>
+						You can find this site, and other projects that i made on my github go and check it out!
+					</p>
+					<div class='mt-5'>
+						<Button
+							text='Check out'
+							link='https://github.com/AlexZama-San/Portfolio-Alex'
+						/>
+					</div>
+				</div>
+
 
 		</div>
 	</section>
