@@ -2,24 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/** Основные цвета */
 :root {
-	--primary: #f1362a;
-	--secondary: #2f2929;
-	--accent: #ac1694;
-	--background: #040404;
+	--primary: #00E7C0;
+	--secondary: #007EE7;
+	--accent: #50B6BF;
+	--background: #00FFCE;
 }
 
 html {
 	scroll-behavior: smooth;
 }
 h1,h2,h3,h4,h5,h6 {
-	font-family: Kanit, sans-serif !important;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif!important;
 	display: inline-block;
 }
 li {
-	font-family: Kanit, sans-serif !important;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 	display: inline-block;
 }
 h2 {
@@ -51,7 +49,7 @@ body{
   	background: rgb(47, 41, 41);
   }
 ::-webkit-scrollbar-thumb:active{
-  	background: rgb(240, 54, 44);
+  	background: rgb(80, 182, 191);
   }
 /* -------------- */
 
@@ -59,7 +57,7 @@ blockquote {
 	padding-left: 0.75rem/* 12px */;
 	border-left-width: 2px;
 	--tw-border-opacity: 1;
-	border-color: rgb(241 54 42 / var(--tw-border-opacity));
+	border-color: rgb(80 182 191 / var(--tw-border-opacity));
 	display: inline-block;
 	font-size: 1.25rem/* 20px */;
 	line-height: 1.75rem/* 28px */;
@@ -111,7 +109,7 @@ blockquote {
 	transition: src 0.5s ease-in-out;
 }
 
-/** Анимация элементов */
+
 .animate {
 	position: relative;
 	transform: translateY(150px);
